@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png"/>
+  <title>
+    M | Who's a good boy?
+  </title>
+</head>
+<body>
+  <div class="container m-t-n">
+    <h1>
+      <a href="./index.html">
+          michebot
+      </a>
+    </h1>
+    <div class="hero">
+      <p>
+      Who's a good boy?
+    </p>
+  </div>
+  <br>
+  <div class="gallery">
+  <img src="img/Goodboy4.png" id="banner" style="height:500px" alt="Random image">
+  <br>
+  <br>
+  <a class="btn"
+    href="#"
+    role="button"
+    onclick="window.location.reload()">
+    Another good boy
+  </a>
+</body>
+
+<script type="text/javascript">
+  var images = new Array('img/Goodboy1.jpg', 'img/Goodboy2.png', 'img/Goodboy3.png', 'img/Goodboy4.png');
+  var l = images.length;
+  var random_no = Math.floor(l*Math.random());
+  document.getElementById("banner").src = images[random_no];
+</script>
+<script src="static/scripts/main.js">
+</script>
+</html>

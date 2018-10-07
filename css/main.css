@@ -1,0 +1,280 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html {
+  background-color: #fff;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+mark {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #fbb760;
+  padding: 5px;
+}
+
+.container {
+  background-color: #fbf7f5;
+  border: 20px solid #fff;
+  margin-top: -15px;
+  text-align: center;
+}
+
+.hero {
+  margin-top: 80px;
+  text-align: center;
+}
+
+h1 {
+  color: #fbb760;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 75px;
+}
+
+h1 a{
+  background-color: #fff;
+  border-radius: 5px;
+  color: #fbb760;
+  padding: 5px;
+  text-decoration: none;
+}
+
+p {
+  color: #a2bda7;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.bookshelf {
+  width: 50%;
+  height: 100%;
+  margin: 100px auto;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.book {
+  height: 200px;
+  width: 40px;
+  float: left;
+  color: white;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16);
+  font-size: 0.9em;
+  font-weight: 600;
+  margin: 10px .5px;
+  transition: transform 0.4s ease;
+}
+
+.book-tilted {
+  float: left;
+  width: 74px;
+}
+
+.book-tilted > .book {
+  transform: translateY(-3px) translateX(15px) rotate(9deg) ;
+}
+
+.book:hover {
+  transform: scale(1.05);
+}
+
+.book-green {
+  background-color: #a2bda7;
+}
+
+.book-red {
+  background-color: #f1765c;
+  font-size: 0.8em;
+}
+
+.book-yellow {
+  background-color: #fbb760;
+  font-size: 1em;
+}
+
+.book-springer {
+  background-color: white;
+  color: #a2bda7;
+  font-size: 0.85em;
+}
+
+.book h2 {
+  padding: 0;
+  font-size: 1em;
+  transform-origin: 0% 0%;
+  transform: rotate(0.25turn) translateY(-35px);
+  width: 170px;
+  letter-spacing: .5px;
+}
+
+.green-link {
+  color: #a2bda7;
+  text-decoration: none;
+}
+.white-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.book h3 {
+  padding: 0;
+  font-size: 0.7em;
+  transform-origin: 0 0;
+  transform: rotate(0.25turn) translateY(-15px) translateX(-20px);
+  width: 150px;
+}
+
+.legend-container {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.legend-circle {
+  border-radius: 10px;
+  box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16);
+  display: inline-block;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+.legend-text {
+  color: #000;
+  display: inline-block;
+}
+
+.btn {
+  white-space: nowrap;
+  display: inline-block;
+  height: 40px;
+  width: 150px;
+  margin-bottom: 3rem;
+  line-height: 40px;
+  -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  background: #fff;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .025em;
+  color: #f1765c;
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.gallery {
+  /* text-align: center;
+  margin: 0 auto; */
+}
+
+/*---------------------------------------------
+	PURE CSS WEATHER ICONS
+	Class names match the icon values returned
+	from the Wunderground API
+----------------------------------------------*/
+.weatherIcon {
+	display: inline-block;
+	font-family: Helvetica, sans-serif;
+	/* Redefine this font size if resizing height & width */
+	font-size: 1em;
+	height: 300px;
+  line-height: 1em;
+	margin: 100px 0px 250px 0px;
+	position: relative;
+	width: 300px;
+}
+.weatherIcon:before, .weatherIcon:after {
+	content: "";
+	height: inherit;
+	left: 0;
+	top: 0;
+	width: inherit;
+}
+.weatherIcon > div:before, .weatherIcon > div:after,
+.weatherIcon .inner:before, .weatherIcon .inner:after {
+	content: "";
+	letter-spacing: 0;
+	position: absolute;
+}
+.clear, .sunny, .fog, .hazy, .inner {
+	height: inherit;
+	width: inherit;
+}
+
+/*** Clear/Sunny ***/
+.clear, .sunny {
+	margin-top: 48.5%;
+}
+.clear, .clear:before, .clear > .inner:before, .clear > .inner:after, .sunny, .sunny:before, .sunny > .inner:before, .sunny > .inner:after {
+	background: #FFD632;
+	left: 0;
+	top: 48.5%;
+	width: 100%;
+	height: 0.2em;
+}
+.clear:before, .sunny:before {
+	transform: rotate(45deg);
+}
+.clear > .inner:before, .sunny > .inner:before {
+	transform: rotate(90deg);
+}
+.clear > .inner:after, .sunny > .inner:after {
+	transform: rotate(135deg);
+}
+.clear:after, .sunny:after {
+	background: #FFD632;
+	border-radius: 50%;
+	height: 60%;
+	left: 20%;
+	top: 20%;
+	width: 60%;
+}
+
+
+/*** Fog / Hazy ***/
+.fog:before, .fog:after, .hazy:before, .hazy:after {
+	background: #fff;
+	border-radius: 50%;
+}
+.fog:before, .hazy:before {
+	height: 63%;
+	left: 0;
+	top: 0;
+	width: 70%;
+}
+.fog:after, .hazy:after {
+	height: 50%;
+	right: 0;
+	top: 13%;
+	width: 55%;
+}
+.fog > .inner:before, .fog > .inner:after, .hazy > .inner:before, .hazy > .inner:after {
+	color: #fff;
+	content: "\2307";
+	font-size: 5em;
+	left: 7%;
+	transform: rotate(90deg);
+}
+.fog > .inner:before, .hazy > .inner:before {
+	bottom: 14%;
+}
+.fog > .inner:after, .hazy > .inner:after {
+	bottom: 0;
+}
+
+.m-t-n {
+  margin-top: 0px;
+}
