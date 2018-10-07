@@ -40,7 +40,7 @@ showMeKarl.prototype.fetch = function(callback) {
 };
 
 
-// Get weather information.
+// Get weather information
 showMeKarl.prototype.now = function() {
     var instance = this;
     this.fetch(function(data) {
