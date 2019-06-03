@@ -49,6 +49,8 @@ p {
   font-weight: 600;
 }
 
+
+
 .bookshelf {
   width: 50%;
   height: 100%;
@@ -178,7 +180,31 @@ p {
 .goodboi-image {
   max-height: 100%;
   max-width: 100%;
+}
 
+.twilio-image {
+  max-width: 85%;
+  max-height: 85%;
+}
+
+.m-t-n {
+  margin-top: 0px;
+}
+
+.ta {
+  text-align: center;
+}
+
+.project-container {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 50%;
+}
+
+.project-text {
+  color: #000000;
+  font-size: 15px;
+  line-height: 22px;
 }
 
 /*---------------------------------------------
@@ -244,7 +270,6 @@ p {
 	width: 60%;
 }
 
-
 /*** Fog / Hazy ***/
 .fog:before, .fog:after, .hazy:before, .hazy:after {
 	background: #fff;
@@ -274,12 +299,4 @@ p {
 }
 .fog > .inner:after, .hazy > .inner:after {
 	bottom: 0;
-}
-
-.m-t-n {
-  margin-top: 0px;
-}
-
-.ta {
-  text-align: center;
 }
