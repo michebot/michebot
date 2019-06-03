@@ -4,13 +4,15 @@
 html {
   background-color: #fff;
   font-family: 'Quicksand', sans-serif;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-  height: 100%;
-  width: 100%;
   margin: 0 auto;
   overflow: auto;
+  background-color: #fbf7f5;
+  border: #fff 20px solid;
 }
 
 mark {
@@ -18,13 +20,6 @@ mark {
   border-radius: 5px;
   color: #fbb760;
   padding: 5px;
-}
-
-.container {
-  background-color: #fbf7f5;
-  border: 20px solid #fff;
-  margin-top: -15px;
-  text-align: center;
 }
 
 .hero {
@@ -178,6 +173,12 @@ p {
 .gallery {
   /* text-align: center;
   margin: 0 auto; */
+  padding: 25px;
+}
+
+.goodboi-image {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 /*---------------------------------------------
@@ -277,4 +278,8 @@ p {
 
 .m-t-n {
   margin-top: 0px;
+}
+
+.ta {
+  text-align: center;
 }
